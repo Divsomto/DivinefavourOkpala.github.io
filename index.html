@@ -94,79 +94,22 @@
 										</a></h2>
 									</header>
 									<a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="image fit"><img src="images/1000257968.jpg" alt="" /></a>
-									<p>Primary Healthcare Coverage Analysis
+									<p>Primary Healthcare Coverage Analysis</p>
 
-​For the Primary Healthcare Access and Coverage Analysis, the SQL workflow was designed to transform disparate datasets—raw functional facility counts and WorldPop population estimates—into a unified, quantifiable metric for visualization.
+<p>​For the Primary Healthcare Access and Coverage Analysis, the SQL workflow was designed to transform disparate datasets—raw functional facility counts and WorldPop population estimates—into a unified, quantifiable metric for visualization.</p>
 
-​This script served as the single source of truth for the analysis, using the following key techniques to prepare the data for Power BI visualization:
+<p>​This script served as the single source of truth for the analysis, using the following key techniques to prepare the data for Power BI visualization:</p>
 
-​- Common Table Expressions (CTEs): Used to modularize the data flow, first to aggregate and clean the raw facility data by Local Government Area (LGA), and a second to calculate the final coverage ratio.
+<p>​- Common Table Expressions (CTEs): Used to modularize the data flow, first to aggregate and clean the raw facility data by Local Government Area (LGA), and a second to calculate the final coverage ratio.</p>
 
-​- Data Aggregation and Grouping (GROUP BY): Essential for totaling the number of functional PHCs per unique LGA.
+<p>​- Data Aggregation and Grouping (GROUP BY): Essential for totaling the number of functional PHCs per unique LGA.</p>
 
-​- Calculations and Casting (CAST): The core metric, Population per Functional PHC, was calculated by dividing the LGA population by the facility count. The CAST function was used to ensure the division was performed as a decimal, preserving the precision of the coverage ratio.
+​<p>- Calculations and Casting (CAST): The core metric, Population per Functional PHC, was calculated by dividing the LGA population by the facility count. The CAST function was used to ensure the division was performed as a decimal, preserving the precision of the coverage ratio.</p>
 
-- ​Conditional Logic (CASE / NULLIF): A CASE statement was implemented to create the final qualitative categories (Good, Moderate, Poor) for visualization, allowing the dashboard to easily segment LGAs based on the ratio (e.g., Poor if > 20,000). 
-The NULLIF function was used to prevent division-by-zero errors in LGAs where no functional PHCs were reported.
+<p>- ​Conditional Logic (CASE / NULLIF): A CASE statement was implemented to create the final qualitative categories (Good, Moderate, Poor) for visualization, allowing the dashboard to easily segment LGAs based on the ratio (e.g., Poor if > 20,000). 
+The NULLIF function was used to prevent division-by-zero errors in LGAs where no functional PHCs were reported.</p>
 
-​- Data Integration (LEFT JOIN): A LEFT JOIN was performed to merge the WorldPop LGA population data with the calculated PHC count, ensuring every LGA was included in the final result set, even those with zero functional facilities.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link">SQL Analysis: Quantifying Primary Healthcare Access in Nigeria<br />
-										</a></h2>
-									</header>
-									<a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="image fit"><img src="images/1000257968.jpg" alt="" /></a>
-									<p><div>
-  <h3>Primary Healthcare Coverage Analysis</h3>
-
-  <p>
-    For the Primary Healthcare Access and Coverage Analysis, the SQL workflow was designed 
-    to transform disparate datasets—raw functional facility counts and WorldPop population 
-    estimates—into a unified, quantifiable metric for visualization.
-  </p>
-
-  <p>
-    This script served as the single source of truth for the analysis, using the following key 
-    techniques to prepare the data for Power BI visualization:
-  </p>
-
-  <ul>
-    <li>
-      <strong>Common Table Expressions (CTEs):</strong> Used to modularize the data flow — first 
-      to aggregate and clean the raw facility data by Local Government Area (LGA), and a second 
-      to calculate the final coverage ratio.
-    </li>
-
-    <li>
-      <strong>Data Aggregation and Grouping (GROUP BY):</strong> Essential for totaling the number 
-      of functional PHCs per unique LGA.
-    </li>
-
-    <li>
-      <strong>Calculations and Casting (CAST):</strong> The core metric, Population per Functional 
-      PHC, was calculated by dividing the LGA population by the facility count. The CAST function 
-      ensured decimal precision for the coverage ratio.
-    </li>
-
-    <li>
-      <strong>Conditional Logic (CASE / NULLIF):</strong> A CASE statement was implemented to 
-      categorize coverage levels (Good, Moderate, Poor) for visualization. NULLIF prevented 
-      division-by-zero errors for LGAs with zero PHCs.
-    </li>
-
-    <li>
-      <strong>Data Integration (LEFT JOIN):</strong> Used to merge the WorldPop LGA population 
-      data with PHC counts, ensuring all LGAs appeared in the final results, even those with 
-      no functional facilities.
-    </li>
-  </ul>
-</div>
-</p>
+​<p>- Data Integration (LEFT JOIN): A LEFT JOIN was performed to merge the WorldPop LGA population data with the calculated PHC count, ensuring every LGA was included in the final result set, even those with zero functional facilities.</p>
 									<ul class="actions special">
 										<li><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="button">View Project</a></li>
 									</ul>
@@ -275,6 +218,7 @@ The analysis delivered concrete, two-pronged recommendations for model improveme
 	</body>
 
 </html>
+
 
 
 
