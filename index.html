@@ -101,14 +101,10 @@
 <p>​This script served as the single source of truth for the analysis, using the following key techniques to prepare the data for Power BI visualization:</p>
 
 <p>​- Common Table Expressions (CTEs): Used to modularize the data flow, first to aggregate and clean the raw facility data by Local Government Area (LGA), and a second to calculate the final coverage ratio.</p>
-
 <p>​- Data Aggregation and Grouping (GROUP BY): Essential for totaling the number of functional PHCs per unique LGA.</p>
-
 ​<p>- Calculations and Casting (CAST): The core metric, Population per Functional PHC, was calculated by dividing the LGA population by the facility count. The CAST function was used to ensure the division was performed as a decimal, preserving the precision of the coverage ratio.</p>
-
 <p>- ​Conditional Logic (CASE / NULLIF): A CASE statement was implemented to create the final qualitative categories (Good, Moderate, Poor) for visualization, allowing the dashboard to easily segment LGAs based on the ratio (e.g., Poor if > 20,000). 
 The NULLIF function was used to prevent division-by-zero errors in LGAs where no functional PHCs were reported.</p>
-
 ​<p>- Data Integration (LEFT JOIN): A LEFT JOIN was performed to merge the WorldPop LGA population data with the calculated PHC count, ensuring every LGA was included in the final result set, even those with zero functional facilities.</p>
 									<ul class="actions special">
 										<li><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="button">View Project</a></li>
@@ -145,28 +141,27 @@ The NULLIF function was used to prevent division-by-zero errors in LGAs where no
 										</a></h2>
 									</header>
 									<a href="https://drive.google.com/drive/folders/13VVUcl0Fj_xhMH6nSmGuAqITAVj7cvfN?usp=drive_link" class="image fit"><img src="images/Screenshot 2025-10-20 173401.png" alt="" /></a>
-									<p>AI Classification Model Analysis & Optimization
+									<p>AI Classification Model Analysis & Optimization</p>
 
-This project involved a comprehensive analysis of an AI model's performance in classifying farmer plots as Valid or Invalid against human validation, addressing a critical bias issue and driving actionable improvement strategies.
+<p>This project involved a comprehensive analysis of an AI model's performance in classifying farmer plots as Valid or Invalid against human validation, addressing a critical bias issue and driving actionable improvement strategies.</p>
 
-Skills Demonstrated: Data Analysis, Power Query (ETL), Pivot Table Construction, Data Visualization (Excel Dashboard/Charts), Performance Metrics Calculation, Technical & Strategic Reporting.
+<p>Skills Demonstrated: Data Analysis, Power Query (ETL), Pivot Table Construction, Data Visualization (Excel Dashboard/Charts), Performance Metrics Calculation, Technical & Strategic Reporting.</p>
 
-Challenge
+<p>Challenge</p>
+<p>The core challenge was a systemic bias in the AI model, resulting in a True Negative (TN) rate of 0 (the model never correctly identified an Invalid plot). This severe bias led to high False Positives (FP=256), where the AI consistently overestimated Valid plots.</p>
 
-The core challenge was a systemic bias in the AI model, resulting in a True Negative (TN) rate of 0 (the model never correctly identified an Invalid plot). This severe bias led to high False Positives (FP=256), where the AI consistently overestimated Valid plots.
+<p>Action & Analysis</p>
 
-Action & Analysis
+<p>I utilized Excel, Power Query, and Pivot Tables to clean, analyze, and segment a 500-plot dataset, calculating Accuracy (40%), Precision (44%), and Recall (82%). My analysis pinpointed specific areas of failure across various subgroups:</p>
+<p> - Subgroup Mismatches: Identified that the AI struggles most with Medium farms (107 mismatches) and crops like Rice (68 mismatches) and Sorghum (60 mismatches).</p>
+<p> - Geographic & Demographic Patterns: Found that the AI performed lowest for the 45+ age group and showed a bias toward over-validating plots from Uganda and Zambia.</p>
+<p> - Visualization: Developed an interactive Excel Dashboard and charts to visually communicate these complex subgroup insights to stakeholders.</p>
 
-I utilized Excel, Power Query, and Pivot Tables to clean, analyze, and segment a 500-plot dataset, calculating Accuracy (40%), Precision (44%), and Recall (82%). My analysis pinpointed specific areas of failure across various subgroups:
- - Subgroup Mismatches: Identified that the AI struggles most with Medium farms (107 mismatches) and crops like Rice (68 mismatches) and Sorghum (60 mismatches).
- - Geographic & Demographic Patterns: Found that the AI performed lowest for the 45+ age group and showed a bias toward over-validating plots from Uganda and Zambia.
- - Visualization: Developed an interactive Excel Dashboard and charts to visually communicate these complex subgroup insights to stakeholders.
+<p>Impact & Recommendations</p>
 
-Impact & Recommendations
-
-The analysis delivered concrete, two-pronged recommendations for model improvement and operational change:
- - Technical Fixes: Recommended retraining the AI with a balanced dataset and including farm size, crop type, and age group as contextual features to mitigate the bias.
- - Operational Strategy: Advised leadership to prioritize manual review for high-risk categories (Medium farms, Rice, and Sorghum) to improve efficiency while the model is updated. The data also informed the need for focused training for human validators in high-error regions.</p>
+<p>The analysis delivered concrete, two-pronged recommendations for model improvement and operational change:</p>
+<p> - Technical Fixes: Recommended retraining the AI with a balanced dataset and including farm size, crop type, and age group as contextual features to mitigate the bias.</p>
+<p> - Operational Strategy: Advised leadership to prioritize manual review for high-risk categories (Medium farms, Rice, and Sorghum) to improve efficiency while the model is updated. The data also informed the need for focused training for human validators in high-error regions.</p>
 									<ul class="actions special">
 										<li><a href="https://drive.google.com/drive/folders/13VVUcl0Fj_xhMH6nSmGuAqITAVj7cvfN?usp=drive_link" class="button">View Project</a></li>
 									</ul>
@@ -218,6 +213,7 @@ The analysis delivered concrete, two-pronged recommendations for model improveme
 	</body>
 
 </html>
+
 
 
 
