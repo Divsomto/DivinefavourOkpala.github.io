@@ -89,6 +89,25 @@
 								</article>
 								<article>
 									<header>
+									
+										<h2><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link">SQL Analysis: Quantifying Primary Healthcare Access in Nigeria<br />
+										</a></h2>
+									</header>
+									<a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="image fit"><img src="images/1000257968.jpg" alt="" /></a>
+									<p>Primary Healthcare Coverage Analysis
+​"For the Primary Healthcare Access and Coverage Analysis, the SQL workflow was designed to transform disparate datasets—raw functional facility counts and WorldPop population estimates—into a unified, quantifiable metric for visualization.
+​This script served as the single source of truth for the analysis, using the following key techniques to prepare the data for Power BI visualization:
+​Common Table Expressions (CTEs): Used to modularize the data flow, first to aggregate and clean the raw facility data by Local Government Area (LGA), and a second to calculate the final coverage ratio.
+​Data Aggregation and Grouping (GROUP BY): Essential for totaling the number of functional PHCs per unique LGA.
+​Calculations and Casting (CAST): The core metric, Population per Functional PHC, was calculated by dividing the LGA population by the facility count. The CAST function was used to ensure the division was performed as a decimal, preserving the precision of the coverage ratio.
+​Conditional Logic (CASE / NULLIF): A CASE statement was implemented to create the final qualitative categories (Good, Moderate, Poor) for visualization, allowing the dashboard to easily segment LGAs based on the ratio (e.g., Poor if > 20,000). The NULLIF function was used to prevent division-by-zero errors in LGAs where no functional PHCs were reported.
+​Data Integration (LEFT JOIN): A LEFT JOIN was performed to merge the WorldPop LGA population data with the calculated PHC count, ensuring every LGA was included in the final result set, even those with zero functional facilities.".</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/drive/folders/1LFrVJ6EPaj5LDhw6lkp1wTC5OOPrzV3p?usp=drive_link" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
 										
 										<h2><a href="https://public.tableau.com/app/profile/divinefavour.okpala/vizzes">Tableau Projects<br />
 										</a></h2>
@@ -106,6 +125,18 @@
 										</a></h2>
 									</header>
 									<a href="https://docs.google.com/spreadsheets/d/1n2Ny0FO_YcOm9qvbH5ka3lyhlKQFhIw4/edit?usp=drive_link&ouid=112981278326704308626&rtpof=true&sd=true" class="image fit"><img src="images/file_00000000f430624398b4171715a7726c.png" alt="" /></a>
+									<p>Developed an interactive Excel dashboard to analyze bike sales data across different regions, customer segments, and customer trends.</p>
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/spreadsheets/d/1n2Ny0FO_YcOm9qvbH5ka3lyhlKQFhIw4/edit?usp=drive_link&ouid=112981278326704308626&rtpof=true&sd=true" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="https://docs.google.com/spreadsheets/d/1n2Ny0FO_YcOm9qvbH5ka3lyhlKQFhIw4/edit?usp=drive_link&ouid=112981278326704308626&rtpof=true&sd=true">Sales Performance Analysis in Excel<br />
+										</a></h2>
+									</header>
+									<a href="https://docs.google.com/spreadsheets/d/1n2Ny0FO_YcOm9qvbH5ka3lyhlKQFhIw4/edit?usp=drive_link&ouid=112981278326704308626&rtpof=true&sd=true" class="image fit"><img src="images/Screenshot 2025-10-20 173401.png" alt="" /></a>
 									<p>Developed an interactive Excel dashboard to analyze bike sales data across different regions, customer segments, and customer trends.</p>
 									<ul class="actions special">
 										<li><a href="https://docs.google.com/spreadsheets/d/1n2Ny0FO_YcOm9qvbH5ka3lyhlKQFhIw4/edit?usp=drive_link&ouid=112981278326704308626&rtpof=true&sd=true" class="button">View Project</a></li>
@@ -158,4 +189,5 @@
 	</body>
 
 </html>
+
 
